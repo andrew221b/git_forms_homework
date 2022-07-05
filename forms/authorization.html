@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,30 +9,41 @@
 </head>
 
 <body>
-    
-    <form action="" method="post">
-        
-       <h1>Authorization</h1>
+
+    <form action="https://tests.fomenko.top/echo/index.php" method="post" target="_blank">
+
+        <h1>Authorization</h1>
+
+        <div>
+            <a href="../index.html">Back to Main Menu</a>
+            <br>
+            <a href="registration.html">Back to Registration Page</a>
+        </div>
 
         <div>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter Email">
-        </div>
-        
-        <div>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="Enter Password">
+            <input type="email" name="email" id="email" placeholder="Enter Email" required autofocus>
         </div>
 
         <div>
-            <label for="confirm_pass">Confirm Password</label>
-            <input type="password" name="confirm_pass" id="confirm_pass" placeholder="Confirm Password">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter Password" required>
         </div>
-        
-        <input type="submit" value="Sign-Up">
-        <input type="reset" value="Reset">
-    
+
+        <div>
+            <label for="remember_pass">Remember Me</label>
+            <input type="checkbox" name="remember_pass" id="confirm_pass">
+        </div>
+
+        <div>
+            <input type="submit" value="Sign-Up">
+            <input type="reset" value="Reset">
+        </div>
+
+        <a href="search.html">Next Page</a>
+
     </form>
 
 </body>
+
 </html>
