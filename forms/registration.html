@@ -8,25 +8,33 @@
 </head>
 <body>
     
-    <form action="" method="post">
+    <form action="https://tests.fomenko.top/echo/index.php" method="post" target="_blank">
         
+        <a href="../index.html">Back to Main</a>
+        
+        <h1>Registration Form</h1>
+
         <div>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter Email">
+            <input type="email" name="email" id="email" placeholder="Enter Email" required autofocus>
         </div>
         
         <div>
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="Enter Password">
+            <input type="password" name="password" id="password" placeholder="Enter Password" required>
         </div>
 
         <div>
             <label for="confirm_pass">Confirm Password</label>
-            <input type="password" name="confirm_pass" id="confirm_pass" placeholder="Confirm Password">
+            <input type="password" name="confirm_pass" id="confirm_pass" placeholder="Confirm Password" required autocomplete="off">
         </div>
+       
+        <div>
+            <input type="submit" value="Sign-up">
+            <input type="reset" value="Reset">
+        </div> 
         
-        <input type="submit" value="Sign-Up">
-        <input type="reset" value="Reset">
+        <a href="authorization.html">Next Page</a>
     
     </form>
 
