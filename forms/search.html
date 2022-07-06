@@ -1,67 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-   <style>
-  
-   
+    <style>
 
-   </style>
-    
+
+    </style>
+
 </head>
 
 <body>
-  
+
     <form action="https://tests.fomenko.top/echo/index.php" method="post">
 
         <h1>Search Auto</h1>
-        
+
         <div>
-            <p>1.Type of Transport</p>
+            <p>1.Body Type</p>
 
-            <input type="checkbox" name="sedan" id="body_type_1">
-            <label for="body_type_1">Sedan</label>
+            <div>
+                <div>
+                    <input type="checkbox" name="sedan" id="body_type_1">
+                    <label for="body_type_1">Sedan</label>
+                </div>
 
-            <input type="checkbox" name="hatchback" id="body_type_2">
-            <label for="body_type_2">Hatchback</label>
+                <div>
+                    <input type="checkbox" name="hatchback" id="body_type_2">
+                    <label for="body_type_2">Hatchback</label>
 
-            <input type="checkbox" name="crossover" id="body_type_3">
-            <label for="body_type_3">Crossover</label>
+                </div>
 
-            <input type="checkbox" name="minivan" id="body_type_4">
-            <label for="body_type_4">Minivan</label>
+                <div>
+                    <input type="checkbox" name="crossover" id="body_type_3">
+                    <label for="body_type_3">Crossover</label>
+                </div>
 
-            <input type="checkbox" name="roadster" id="body_type_5">
-            <label for="body_type_5">Roadster</label>
+                <div>
+                    <input type="checkbox" name="minivan" id="body_type_4">
+                    <label for="body_type_4">Minivan</label>
 
-            <input type="checkbox" name="pickup" id="body_type_6">
-            <label for="body_type_6">Pickup</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="roadster" id="body_type_5">
+                    <label for="body_type_5">Roadster</label>
+
+                </div>
+
+                <div>
+                    <input type="checkbox" name="pickup" id="body_type_6">
+                    <label for="body_type_6">Pickup</label>
+                </div>
+            </div>
         </div>
 
         <div>
             <p>2.Model</p>
 
-            <label for="cars">Choose a car</label>
-            <select name="model" id="cars">
-                <option selected>Any</option>
-                <option value="toyota">Toyota</option>
-                <option value="subaru">Subaru</option>
-                <option value="audi">Audi</option>
-                <option value="bmw">BMW</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="volvo">Volvo</option>
-                <option value="nissan">Nissan</option>
-                <option value="opel">Opel</option>
-            </select>
-            
-        </div>
-        
+            <div>
+                <div>
+                    <label for="country">Choose Country</label>
+                    <select name="country" id="country">
+                        <option selected value="any">Any</option>
+                        <option value="japan">Japan</option>
+                        <option value="germany">Germany</option>
+                        <option value="sweden">Sweden</option>
+                    </select>
+                </div>
 
-    </form>    
+                <div>
+                    <label for="model">Choose Brand</label>
+                    <select name="model" id="model">
+                        <option selected value="any">Any</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="subaru">Subaru</option>
+                        <option value="audi">Audi</option>
+                        <option value="bmw">BMW</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="nissan">Nissan</option>
+                        <option value="opel">Opel</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p>3.Choose Year</p>
+
+            <div>
+                <div style="display: inline-block;">
+                    <label for="from">From</label>
+                    <input min="1900" max="2022" type="number" id="from" name="year_from">
+                </div>
+
+                <div style="display: inline-block;">
+                    <label for="to">To</label>
+                    <input min="1900" max="2022" type="number" id="to" name="year_to">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p> <b>4.State</b> </p>
+
+            <div>
+                <div>
+                    <input type="checkbox" name="accident" id="accident">
+                    <label for="accident">Was in Accident</label> <br>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="credit" id="credit">
+                    <label for="credit">Car in Credit</label> <br>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="first_reg" id="first_reg">
+                    <label for="first_reg">First Registration</label> <br>
+
+                </div>
+
+                <div>
+                    <input type="checkbox" name="in_uk" id="in_uk">
+                    <label for="in_uk">Car in Ukraine</label> <br>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="first_owner" id="first_owner">
+                    <label for="first_owner">First Owner</label> <br>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="garage" id="garage">
+                    <label for="garage">Garage Storage</label>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p> <b>5.Specifications</b> </p>
+
+            <div>
+                <div>
+                    <label for="transmission">Transmission</label>
+                    <select name="transmission" id="transmission">
+                        <option selected value="any">Any</option>
+                        <option value="manual">Manual</option>
+                        <option value="auto">Auto</option>
+                        <option value="tiptronic">Tiptronic</option>
+                        <option value="variator">Variator</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="fuel">Fuel</label>
+                    <select name="fuel" id="fuel">
+                        <option selected value="any">Any</option>
+                        <option value="gasoline">Gasoline</option>
+                        <option value="gas">Gas</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="Electro">Electro</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="favcolor">Select your favorite color:</label>
+                    <input type="color" id="favcolor" name="favcolor">
+                </div>
+            </div>
+
+            <div>
+                <p> <b>6.Additional Options</b> </p>
+
+                <div>
+                    <div>
+                        <label for="int_mat">Interior Materials</label>
+                        <select name="fuel" id="fuel">
+                            <option selected>Choose</option>
+                            <option value="gasoline">Gasoline</option>
+                            <option value="gas">Gas</option>
+                            <option value="diesel">Diesel</option>
+                            <option value="Electro">Electro</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="heated_seats">Heated Seats</label>
+                        <select name="fuel" id="fuel">
+                            <option selected value="any">Any</option>
+                            <option value="gasoline">Gasoline</option>
+                            <option value="gas">Gas</option>
+                            <option value="diesel">Diesel</option>
+                            <option value="Electro">Electro</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="heated_seats">Heated Seats</label>
+                        <select name="fuel" id="fuel">
+                            <option selected value="any">Any</option>
+                            <option value="gasoline">Gasoline</option>
+                            <option value="gas">Gas</option>
+                            <option value="diesel">Diesel</option>
+                            <option value="Electro">Electro</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="heated_seats">Heated Seats</label>
+                        <select name="fuel" id="fuel">
+                            <option selected value="any">Any</option>
+                            <option value="gasoline">Gasoline</option>
+                            <option value="gas">Gas</option>
+                            <option value="diesel">Diesel</option>
+                            <option value="Electro">Electro</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="heated_seats">Heated Seats</label>
+                        <select name="fuel" id="fuel">
+                            <option selected value="any">Any</option>
+                            <option value="gasoline">Gasoline</option>
+                            <option value="gas">Gas</option>
+                            <option value="diesel">Diesel</option>
+                            <option value="Electro">Electro</option>
+                        </select>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <div>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </div>
+
+
+    </form>
 
 </body>
+
 </html>
