@@ -15,13 +15,13 @@
 </head>
 
 <body>
+    <h1>Search Auto</h1>
 
-    <form action="https://tests.fomenko.top/echo/index.php" method="post">
+    <a href="../index.html">Back to Main Page</a>
 
-        <h1>Search Auto</h1>
-
+    <form action="https://tests.fomenko.top/echo/index.php" method="post" target="_blank">
         <div>
-            <p>1.Body Type</p>
+            <p><b>1.Body Type</b></p>
 
             <div>
                 <div>
@@ -60,7 +60,7 @@
         </div>
 
         <div>
-            <p>2.Model</p>
+            <p><b>2.Model</b></p>
 
             <div>
                 <div>
@@ -74,8 +74,8 @@
                 </div>
 
                 <div>
-                    <label for="model">Choose Brand</label>
-                    <select name="model" id="model">
+                    <label for="brand">Choose Brand</label>
+                    <select name="brand" id="brand">
                         <option selected value="any">Any</option>
                         <option value="toyota">Toyota</option>
                         <option value="subaru">Subaru</option>
@@ -91,7 +91,7 @@
         </div>
 
         <div>
-            <p>3.Choose Year</p>
+            <p><b>3.Choose Year</b></p>
 
             <div>
                 <div style="display: inline-block;">
@@ -107,7 +107,7 @@
         </div>
 
         <div>
-            <p> <b>4.State</b> </p>
+            <p><b>4.State</b></p>
 
             <div>
                 <div>
@@ -181,78 +181,60 @@
                 <div>
                     <div>
                         <label for="int_mat">Interior Materials</label>
-                        <select name="fuel" id="fuel">
-                            <option selected>Choose</option>
-                            <option value="gasoline">Gasoline</option>
-                            <option value="gas">Gas</option>
-                            <option value="diesel">Diesel</option>
-                            <option value="Electro">Electro</option>
+                        <select name="int_mat" id="int_mat">
+                            <option selected disabled hidden>Choose</option>
+                            <option value="cloth">Cloth</option>
+                            <option value="skin">Skin</option>
+                            <option value="velor">Velor</option>
+                            <option value="combined">Combined</option>
                         </select>
                     </div>
 
                     <div>
                         <label for="heated_seats">Heated Seats</label>
-                        <select name="fuel" id="fuel">
-                            <option selected value="any">Any</option>
-                            <option value="gasoline">Gasoline</option>
-                            <option value="gas">Gas</option>
-                            <option value="diesel">Diesel</option>
-                            <option value="Electro">Electro</option>
+                        <select name="heated_seats" id="heated_seats">
+                            <option selected disabled hidden>Choose</option>
+                            <option value="front">Front seat</option>
+                            <option value="front_rear">Front and Rear seat</option>
                         </select>
                     </div>
 
                     <div>
-                        <label for="heated_seats">Heated Seats</label>
-                        <select name="fuel" id="fuel">
-                            <option selected value="any">Any</option>
-                            <option value="gasoline">Gasoline</option>
-                            <option value="gas">Gas</option>
-                            <option value="diesel">Diesel</option>
-                            <option value="Electro">Electro</option>
+                        <label for="air_cond">Air Conditioning</label>
+                        <select name="air_cond" id="air_cond">
+                            <option selected disabled hidden>Choose</option>
+                            <option value="air">Air conditioning</option>
+                            <option value="climate_1_zone">Climate control 1 zone</option>
+                            <option value="climate_2_zone">Climate controle 2 zone</option>
                         </select>
                     </div>
 
                     <div>
-                        <label for="heated_seats">Heated Seats</label>
-                        <select name="fuel" id="fuel">
-                            <option selected value="any">Any</option>
-                            <option value="gasoline">Gasoline</option>
-                            <option value="gas">Gas</option>
-                            <option value="diesel">Diesel</option>
-                            <option value="Electro">Electro</option>
+                        <label for="el_windows">Electric windows</label>
+                        <select name="el_windows" id="el_windows">
+                            <option selected disabled hidden>Choose</option>
+                            <option value="front_window">Front window</option>
+                            <option value="fron_rear_window">Front and rear window</option>
                         </select>
                     </div>
 
                     <div>
-                        <label for="heated_seats">Heated Seats</label>
-                        <select name="fuel" id="fuel">
-                            <option selected value="any">Any</option>
-                            <option value="gasoline">Gasoline</option>
-                            <option value="gas">Gas</option>
-                            <option value="diesel">Diesel</option>
-                            <option value="Electro">Electro</option>
+                        <label for="int_color">Interior Color</label>
+                        <select name="int_color" id="int_color">
+                            <option selected disabled hidden>Choose</option>
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                            <option value="brown">Brown</option>
                         </select>
                     </div>
-
-
                 </div>
             </div>
-
         </div>
-
-
-
-
-
-
-
 
         <div>
             <input type="submit" value="Send">
             <input type="reset" value="Reset">
         </div>
-
-
     </form>
 
 </body>
